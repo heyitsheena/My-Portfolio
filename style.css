@@ -189,14 +189,27 @@ section p {
     background-color: white;
     padding: 25px;
     border-radius: 10px;
-    
+    border: 1px solid #e0e0ee;
+    }
+.project-card p {
+    color: #55556b;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-
+.project-card a {
+    display: inline-block;
+    background: #5b5bd6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
 
 .project-card h3 {
     margin-bottom: 12px;
     color: #5b5bd6;
+    font-size: 20px;
 }
 
 /* Contact Form */
