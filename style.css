@@ -1,0 +1,366 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    color: #22223b;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    gap: 20px;
+}
+
+.logo {
+    color: #5b5bd6;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #33334d;
+}
+
+.nav-links a:hover {
+    color: #5b5bd6;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#themeButton {
+    background-color: #5b5bd6;
+    color: white;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 6px;
+}
+
+/* Common Section Styling */
+section {
+    padding: 70px 8%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #5b5bd6;
+}
+
+section p {
+    color: #55556b;
+}
+
+/* Home Section */
+.home {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #eeeeff, #f8f9fc);
+}
+
+.home .container {
+    width: 100%;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    text-align: left;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    max-width: 650px;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #5b5bd6;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+/* Education Cards */
+.education-card {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    border-left: 5px solid #5b5bd6;
+   
+}
+
+
+
+.education-card h3 {
+    margin-bottom: 8px;
+    color: #252545;
+}
+
+.education-card h4 {
+    color: #5b5bd6;
+    margin-bottom: 8px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    border: 1px solid #dedff5;
+    font-weight: bold;
+   
+}
+
+.skill:hover {
+    background-color: #5b5bd6;
+    color: white;
+    
+}
+
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    
+}
+
+
+
+.project-card h3 {
+    margin-bottom: 12px;
+    color: #5b5bd6;
+}
+
+/* Contact Form */
+#contactForm,
+#adminForm {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #d5d6e2;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #b8b8ff;
+    border-color: #5b5bd6;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#contactForm button,
+#adminForm button,
+#logoutButton {
+    background-color: #5b5bd6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#formStatus,
+#adminStatus {
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* User Responses */
+#responseSection {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#responseSection h3 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #22223b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+footer p {
+    color: white;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #171827;
+    color: #f5f5ff;
+}
+
+body.dark-theme header,
+body.dark-theme .education-card,
+body.dark-theme .skill,
+body.dark-theme .project-card,
+body.dark-theme #responseSection {
+    background-color: #25273a;
+    color: #f5f5ff;
+}
+
+body.dark-theme .nav-links a,
+body.dark-theme .education-card h3 {
+    color: #f5f5ff;
+}
+
+body.dark-theme section p {
+    color: #c7c9dc;
+}
+
+body.dark-theme .home {
+    background: linear-gradient(135deg, #25273a, #171827);
+}
+
+body.dark-theme input,
+body.dark-theme textarea {
+    background-color: #25273a;
+    color: white;
+    border-color: #494c65;
+}
+
+body.dark-theme .education-card h4,
+body.dark-theme .project-card h3 {
+    color: #aaa6ff;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .home h2 {
+        font-size: 22px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        margin-right: 5px;
+    }
+}
